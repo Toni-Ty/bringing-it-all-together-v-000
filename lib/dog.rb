@@ -78,7 +78,7 @@ def self.find_by_id(id)
   end.first
 end
 
-def find_or_create_by(name:, breed:)
+def self.find_or_create_by(name:, breed:)
   sql = <<-SQL
     SELECT *
     FROM dogs
