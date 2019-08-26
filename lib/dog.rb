@@ -28,7 +28,7 @@ class Dog
     dog.save
     dog
   end
-  
+
 def self.new_from_db(row)
   id = row[0]
   name = row[1]
@@ -81,7 +81,7 @@ def find_or_create_by(name:, breed:)
   end
     dog
 end
-  
+
 
 
 
