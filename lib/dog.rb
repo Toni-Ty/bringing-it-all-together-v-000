@@ -98,27 +98,31 @@ def self.find_or_create_by(name:, breed:)
     dog
 end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def self.update
+  sql = "UPDATE dogs SET name = ?, breed = ?  WHERE id = ?"
+  DB[:conn].execute(sql, self.name, self.breed, self.id)
+  end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
